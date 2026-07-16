@@ -9,7 +9,7 @@ const Contact = () => {
     <section
     id="contact"
     className="py-20 bg-stone-50">
-        <div className="max-w-7xl mx-auto px-5 lg:px-7  lg:px-10">
+        <div className="max-w-7xl mx-auto px-5  lg:px-10">
             {/* heading */}
             <motion.div
             initial={{opacity:0,y:40}}
@@ -34,7 +34,7 @@ const Contact = () => {
             </motion.div>
 
             {/* main grid */}
-            <div className='grid lg:grid-cols-[60%_40%] gap-8'>
+            <div className='grid grid-cols-1 lg:grid-cols-[60%_40%] gap-8'>
              {/* left side */}
              <motion.div
                 initial={{opacity:0,y:40}}
