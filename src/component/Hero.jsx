@@ -7,8 +7,8 @@ const Hero = () => {
    <>
      <motion.section
      initial={{opacity:0, y:-90}}
-     animate={{opacity:1,x:1}}
-     transition={{duration:0.9 , delay:0.41}}
+     animate={{opacity:1,y:0}}
+     transition={{duration:0.9 }}
      id='home'
      className='flex items-center bg-stone-50 min-h-screen mt-30'
     >
@@ -39,7 +39,7 @@ const Hero = () => {
                  </h1>
 
                  {/* paragraph */}
-                 <p className='text-lg text-stone-500 leading-9   '>
+                 <p className='max-w-xl text-lg text-stone-500 leading-9   '>
                      Slow-brewed in terracotta kulhads over open flames. A love letter to street corners, monsoon evenings, and every quiet conversation that begins with
                      <span className=' italic '>
                       {""}
@@ -52,9 +52,10 @@ const Hero = () => {
                         whileTap={{ scale: 0.95 }}
                        className="flex items-center gap-3  bg-orange-500 hover:bg-orange-600  px-7 py-4 rounded-full text-white transition ">
                         Explore Menu
-                        <ArrowRight/>
+                        <ArrowRight className="w-5 h-5"/>
                        </motion.button>
                        <motion.button
+                       whileHover={{ scale: 1.03 }}
                        whileTap={{ scale: 0.95 }}
                        className='flex items-center gap-3  hover:bg-stone-900 hover:text-white px-7 py-4 rounded-full transition border border-stone-700 '
                        >
@@ -70,6 +71,7 @@ const Hero = () => {
                   <img 
                    src={chai}
                    alt="chai image"
+                   fetchPriority="high"
                    className='rounded-xl h-[450px] lg:h-[570px] w-full object-cover'
                     />
              </div>
