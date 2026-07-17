@@ -57,6 +57,8 @@ const MenuSection = () => {
                        <img
                         src={item.image}
                          alt={item.title}
+                         loading="lazy"
+                         decoding="async"
                          className='h-72 w-full object-cover group-hover:scale-110 duration-300'
                          />
 

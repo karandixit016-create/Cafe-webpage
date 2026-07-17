@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Circle, Menu, X} from 'lucide-react';
-import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 
@@ -82,12 +81,11 @@ const Navbar = () => {
                          <ul className="flex flex-col gap-6">
                             {navLinks.map((item)=>(
                              <li key={item.id}>
-                               <Link 
-                               to={item.id}
+                               <a href={item.id} 
                                onClick={()=> setMenuOpen(false)}
                                className=" block text-stone-900 hover:text-orange-400 font-medium">
                                 {item.name}
-                               </Link>
+                               </a>
                              </li>  
                              ))}
                          </ul>

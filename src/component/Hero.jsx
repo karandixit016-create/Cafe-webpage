@@ -72,6 +72,7 @@ const Hero = () => {
                    src={chai}
                    alt="chai image"
                    fetchPriority="high"
+                    decoding="async"
                    className='rounded-xl h-[450px] lg:h-[570px] w-full object-cover'
                     />
              </div>
